@@ -23,10 +23,8 @@ jobs:
     - name: Set up Python 3.6
       uses: actions/setup-python@v2
       with:
-        python-version: 3.6
+        python-version: 3.7
     - name: 'Install dependencies'
-      run: python -m pip3 install --upgrade pip
-    - name: 'Install requirements'
-      run: pip3 install -r ./requirements.txt
+      run: pip install -r requirements.txt
     - name: '开始运行'
       run: python holiday.py    
