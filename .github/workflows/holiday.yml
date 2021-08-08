@@ -12,11 +12,10 @@ on:
   watch:
     types: [started] # 定义star是自动发送
 
-
+  workflow_dispatch:
 
 jobs:
-  build:
-
+  start:
     runs-on: ubuntu-latest
 
     steps:
